@@ -30,3 +30,8 @@ for (const [band, members] of bands2) {
     console.log(band);
     console.log(members[members.length -1]);
 }
+
+bands2.forEach((value, key) => {
+    console.log(value[value.length - 1]);
+    key;
+})
