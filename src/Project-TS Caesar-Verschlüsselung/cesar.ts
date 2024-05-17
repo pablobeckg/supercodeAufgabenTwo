@@ -32,6 +32,34 @@ function encode(text:string, num: number) {
     return newArray2.join('')
 }
 
+function decode(text:string, num: number) {
+    const split = text.toUpperCase().split('');
+    console.log(split);
+    const newArray: number[]  = [];
+    const newArray2: string[] = [];
+    split.forEach(element => {
+        if(element == ' ') {
+            newArray.push(element.charCodeAt(0));
+        } else {
+            newArray.push(element.charCodeAt(0) - num);
+        }
+        
+    });
+    for (let index = 0; index < newArray.length; index++) {
+        
+        if(newArray[index] < 65 && !32) {
+            newArray[index] += 26
+        } 
+        
+    }
+    newArray.forEach(element => {
+        const toLetter = String.fromCharCode(element)
+        newArray2.push(toLetter)
+    });
+
+    return newArray2.join('')
+}
+
 getEncodeBttn?.addEventListener('click', (event: Event) => {
     event.preventDefault();
     if(getSolution) {
@@ -42,7 +70,7 @@ getEncodeBttn?.addEventListener('click', (event: Event) => {
 getDecodeBttn?.addEventListener('click', (event: Event) => {
     event.preventDefault();
     if(getSolution) {
-        getSolution.textContent = getText.value;
+        getSolution.textContent = decode(getText.value, parseInt(getInput.value));
     }
     
 })
