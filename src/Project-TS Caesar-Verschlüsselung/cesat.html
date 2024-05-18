@@ -4,16 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cesar</title>
+    <link rel="stylesheet" href="cesar.css">
 </head>
 <body>
-    <h1>Caesar's Verschlüsselung</h1>
-    <form>
-        <input type="text" name="" id="secretText">
-        <input type="number" name="" id="secretNumber" min="0" max="26">
-    </form>
-    <button id="encoder">Encode</button>
-    <button id="decoder">Decode</button>
-    <h3></h3>
+    <div>
+        <h1>Caesar's Verschlüsselung</h1>
+        <form>
+            <input type="text" name="" id="secretText" placeholder="Add text">
+            <input type="number" name="" id="secretNumber" min="1" max="26" placeholder="1">
+        </form>
+        <button id="encoder">Encode</button>
+        <button id="decoder">Decode</button>
+        <h3></h3>
+    </div>
     <script type="module" src="./cesar.ts"></script>
 </body>
 </html>

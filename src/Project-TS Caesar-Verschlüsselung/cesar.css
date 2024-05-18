@@ -1,0 +1,29 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+div {
+    background-color: darkslategray;
+    padding: 20px;
+    width: 430px;
+    margin: 100px auto;
+}
+
+h1, h3 {
+    color: white;
+    margin: 20px 10px;
+}
+input {
+    margin: 20px 10px;
+    border-radius: 10px;
+    padding: 10px;
+    border: none;
+}
+
+button {
+    border: none;
+    background-color: aqua;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px;
+}
