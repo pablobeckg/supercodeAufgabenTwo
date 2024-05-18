@@ -9,13 +9,13 @@ function encode(text:string, num: number) {
     console.log(split);
     const newArray: number[]  = [];
     const newArray2: string[] = [];
+    
     split.forEach(element => {
         if(element == ' ') {
             newArray.push(element.charCodeAt(0));
         } else {
             newArray.push(element.charCodeAt(0) + num);
         }
-        
     });
     for (let index = 0; index < newArray.length; index++) {
         
@@ -28,7 +28,7 @@ function encode(text:string, num: number) {
         const toLetter = String.fromCharCode(element)
         newArray2.push(toLetter)
     });
-
+    getText.value = '';
     return newArray2.join('')
 }
 
@@ -47,16 +47,18 @@ function decode(text:string, num: number) {
     });
     for (let index = 0; index < newArray.length; index++) {
         
-        if(newArray[index] < 65 && !32) {
+        if(newArray[index] < 65) {
             newArray[index] += 26
-        } 
+        }if (newArray[index] == 58) {
+            newArray[index] -= 26
+        }
         
     }
     newArray.forEach(element => {
         const toLetter = String.fromCharCode(element)
         newArray2.push(toLetter)
     });
-
+    getText.value = '';
     return newArray2.join('')
 }
 
