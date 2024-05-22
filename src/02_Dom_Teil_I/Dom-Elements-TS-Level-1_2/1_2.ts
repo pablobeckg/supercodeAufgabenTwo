@@ -7,7 +7,9 @@ selectButton?.addEventListener('click', () => {
 
 
 function changeColor() {
+    const colors = ['red', 'blue', 'yellow', 'pink', 'purple', 'cyan'];
+    const randomColor = Math.floor(Math.random()*colors.length)
     for(let i = 0; i < exampleElements.length; i++) {
-        exampleElements[i].style.backgroundColor = 'red';
+        exampleElements[i].style.backgroundColor = colors[randomColor];
     }
 }
