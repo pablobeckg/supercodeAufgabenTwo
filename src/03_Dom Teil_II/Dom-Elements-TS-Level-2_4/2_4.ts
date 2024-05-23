@@ -4,9 +4,9 @@ const buttonElement = document.getElementById('button');
 
 buttonElement?.addEventListener('click', (event: Event) => {
     event.preventDefault();
-    const colorValue = selectElemente.value
+    const colorValue = selectElemente.value;
     if(bodyElement) {
-        bodyElement.style.backgroundColor = colorValue;
+        bodyElement.style.backgroundColor = colorValue.replace(' ', '');
         console.log(colorValue);
     }
 })
