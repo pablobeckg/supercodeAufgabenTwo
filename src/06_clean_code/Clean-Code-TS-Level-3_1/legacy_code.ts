@@ -37,22 +37,7 @@ enum TaskType {
   console.log('Aufgabe erstellt ' + input3 + ' von ' + n);
   
   console.log('debug1');
-  // // Get the input from the user for a task
-  // const input3 = prompt('Bitte geben Sie noch eine Aufgabe ein:');
-  // array.push(input3 || '');
-  // let io3 = { name: input3 || '' };
-  // array2.push(io3);
-  // // Log the task to the console
-  // console.log('Aufgabe erstellt ' + input3 + ' von ' + n);
-  
-  // // Get the input from the user for a task
-  // const input3 = prompt('Bitte geben Sie noch eine Aufgabe ein:');
-  // array.push(input3 || '');
-  // let io3 = { name: input3 || '' };
-  // array2.push(io3);
-  // // Log the task to the console
-  // console.log('Aufgabe erstellt ' + input3 + ' von ' + n);
-  
+
   if (array[0] === '') {
     array.shift();
   } else if (array[1] === '') {
