@@ -15,7 +15,7 @@ export class Employee implements IEmployee {
 
   getYearsOfService(): number {
     const now = new Date();
-    const diff = now.getTime() - this.startDate.getTime();
-    return Math.floor(diff / (1000 * 60 * 60 * 24 * 365.25));
+    const diff = now.getFullYear() - this.startDate.getFullYear();
+    return diff;
   }
 }
