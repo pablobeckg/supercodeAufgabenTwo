@@ -6,7 +6,7 @@ class FreddieMercury extends Singer {
     }
 
     sing(): string {
-        return "We will, we will rock you!";
+        return "We will, we will rock youu!";
     }
 }
 
