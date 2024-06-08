@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zoo</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <h1>Zooverwaltung</h1>
+    
+    <h2>Gehege</h2>
+    <ul id="enclosure-list"></ul>
+    <h2>Neues Tier anlegen</h2>
+    <div id="data-output"></div>
+    <form id="animal-form">
+        <select name="" id="animal-type">
+            <option value="">Select Animal</option>
+        </select>
+        <label for="animal-name">Name:</label>
+        <input type="text" id="animal-name" required>
+        <label for="yearOfBirth">Year of birth</label>
+        <input type="number" id="year-of-birth" min="1900" max="2100" required>
+        <label for="specialNeeds">Special needs:</label>
+        <input type="text" id="special-needs" required>
+        <button type="submit">Create Animal</button>
+    </form>
+    <script type="module" src="app.ts"></script>
+</body>
+</html>
