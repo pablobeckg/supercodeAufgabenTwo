@@ -1,0 +1,88 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+button {
+  border-radius: 8px;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #303030;
+  cursor: pointer;
+  transition: border-color 0.25s;
+  width: 70%;
+  align-self: center;
+}
+button:hover {
+  border-color: pink;
+}
+
+.label{
+  color: pink;
+}
+
+#form-wrapper{
+  margin: 0 auto;
+  width: 800px;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  padding: 4em 2em 2em 2em;
+  background-color: #181818;
+  border-radius: 15px;
+}
+
+input{
+  padding: 0.5em;
+  margin-bottom: 1.5em;
+  border-radius: 15px;
+  border: 1px solid pink;
+}
+
+#card-output-area {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card-container{
+  width: 500px;
+  height: 250px;
+  border-radius: 15px;
+  margin: 20px auto;
+  background-image: url(img/creditcard-img.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px 15px;
+  color: rgb(105, 99, 99);
+  font-size: 1.3rem;
+}
+
+.card-container > h3 {
+  margin-top: 10rem;
+  margin-bottom: 2rem;
+}
+
+.card-container > div {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
