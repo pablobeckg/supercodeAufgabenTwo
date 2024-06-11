@@ -1,0 +1,12 @@
+body {
+    background-color: aqua;
+    padding: 50px;
+}
+
+button {
+    border: none;
+    background-color: rgb(22, 225, 22);
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
